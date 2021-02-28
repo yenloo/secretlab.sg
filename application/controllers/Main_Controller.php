@@ -70,7 +70,7 @@ class Main_Controller extends REST_Controller {
         else{
             $this->response(array(
                 "success" => FALSE,
-                "message" => "Object not found. Please try again."
+                "message" => "Object not found. Please try again!"
             ));
 
         }
