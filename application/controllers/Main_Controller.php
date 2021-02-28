@@ -40,7 +40,7 @@ class Main_Controller extends REST_Controller {
                 else{
                     $this->response(array(
                         "success" => FALSE,
-                        "message" => "Action failed. Please try again."
+                        "message" => "Action failed. Please try again!"
                     ));
                 }
             }
