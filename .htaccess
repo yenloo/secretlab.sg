@@ -1,0 +1,15 @@
+RewriteEngine on
+RewriteBase /secretlab.sg
+
+RewriteCond %{REQUEST_METHOD}  !=POST
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ $1/ [R=302,L]
+
+RewriteCond $1 !^(index\.php|attachments|reports|images|js|css|fonts|public/|plugins|img-uploads|test\.php|robots\.txt)
+RewriteRule ^(.*)$ index.php?/$1 [L]
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
