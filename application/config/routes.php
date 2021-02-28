@@ -54,9 +54,9 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 /******************************************************************/
-$route["api/object"]   = 'Main_controller/object';
-$route["api/object/(:any)"]   = 'Main_controller/object/$1';
-$route["api/get_all_objects"]   = 'Main_controller/objects';
+$route["api/object"]   = 'Main_Controller/object';
+$route["api/object/(:any)"]   = 'Main_Controller/object/$1';
+$route["api/get_all_objects"]   = 'Main_Controller/objects';
 // $route["api/object/get_all_records"]   = 'Main_controller/object/get_all_records';
 
 
