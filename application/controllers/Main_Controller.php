@@ -23,7 +23,7 @@ class Main_Controller extends REST_Controller {
         if(empty($object_key)){
             $this->response(array(
                 "success" => FALSE,
-                "message" => "Please pass in your object key and try again."
+                "message" => "Please pass in your object key and try again!"
             ));
             exit();
         }
