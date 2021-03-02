@@ -6,7 +6,17 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       # For YAML Actions, use v1 or later
-      - uses: pxgamer/phpunit-action@master
-        with:
+      #- uses: pxgamer/phpunit-action@master
+        #with:
           # If there isn't a PHPUnit config, specify files or directories to test
-          command: vendor/bin/phpunit --no-coverage --verbose application/tests/SecretlabTest
+          #command: vendor/bin/phpunit --no-coverage --verbose application/tests/SecretlabTest
+      
+      - uses: php-actions/composer@v5
+
+      - name: PHPUnit Tests
+        uses: php-actions/phpunit@v8
+        with:
+          bootstrap: vendor/autoload.php
+          configuration: application/tests/phpunit.xml
+          args: --coverage-text
+
