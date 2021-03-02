@@ -40,10 +40,4 @@ jobs:
 
       - name: PHPUnit Tests
         run: vendor/bin/phpunit --verbose application/tests/SecretlabTest
-        #uses: php-actions/phpunit@v8
-        #with:
-        #  php_version: 7.2
-        #  bootstrap: vendor/autoload.php
-        #  configuration: application/tests/phpunit.xml
-        #  args: --coverage-text
 
