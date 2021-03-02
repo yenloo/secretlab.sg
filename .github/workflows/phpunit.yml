@@ -5,8 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with: 
-          php_version: 7.2
         
       # For YAML Actions, use v1 or later
       #- uses: pxgamer/phpunit-action@master
