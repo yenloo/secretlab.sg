@@ -46,12 +46,12 @@ class SecretlabTest extends TestCase {
     }
 
     
-    public function testGetDB()
-    {
-        $this->load->model('Main_model','main');
-        $this->main->get_all_objects();
+//     public function testGetDB()
+//     {
+//         $this->load->model('Main_model','main');
+//         $this->main->get_all_objects();
 
-    }
+//     }
 
 
 }
