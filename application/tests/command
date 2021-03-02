@@ -1,0 +1,9 @@
+remove phpunit 8
+composer remove phpunit/phpunit
+
+--Install phpunit 8
+composer require --dev phpunit/phpunit ^8  
+
+
+--Run phpunit test command
+../../vendor/bin/phpunit --no-coverage --verbose SecretlabTest

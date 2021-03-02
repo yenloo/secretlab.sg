@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="SecretlabTest" file="/Applications/MAMP/htdocs/secretlab.sg/application/tests/SecretlabTest.php" tests="5" assertions="10" errors="1" warnings="0" failures="0" skipped="0" time="0.020690">
+    <testcase name="testPushAndPop" class="SecretlabTest" classname="SecretlabTest" file="/Applications/MAMP/htdocs/secretlab.sg/application/tests/SecretlabTest.php" line="6" assertions="5" time="0.013795"/>
+    <testcase name="testEmpty" class="SecretlabTest" classname="SecretlabTest" file="/Applications/MAMP/htdocs/secretlab.sg/application/tests/SecretlabTest.php" line="19" assertions="1" time="0.001469"/>
+    <testcase name="testPush" class="SecretlabTest" classname="SecretlabTest" file="/Applications/MAMP/htdocs/secretlab.sg/application/tests/SecretlabTest.php" line="30" assertions="2" time="0.001792"/>
+    <testcase name="testPop" class="SecretlabTest" classname="SecretlabTest" file="/Applications/MAMP/htdocs/secretlab.sg/application/tests/SecretlabTest.php" line="42" assertions="2" time="0.000761"/>
+    <testcase name="testGetDB" class="SecretlabTest" classname="SecretlabTest" file="/Applications/MAMP/htdocs/secretlab.sg/application/tests/SecretlabTest.php" line="49" assertions="0" time="0.002873">
+      <error type="Error">SecretlabTest::testGetDB
+Error: Call to a member function model() on null
+
+/Applications/MAMP/htdocs/secretlab.sg/application/tests/SecretlabTest.php:51
+</error>
+      <system-out>
+A PHP Error was encountered
+
+Severity:    Notice
+Message:     Undefined property: SecretlabTest::$load
+Filename:    /Applications/MAMP/htdocs/secretlab.sg/application/tests/SecretlabTest.php
+Line Number: 51
+
+Backtrace:
+	File: /Applications/MAMP/htdocs/secretlab.sg/application/tests/SecretlabTest.php
+	Line: 51
+	Function: _error_handler
+
+	File: /Applications/MAMP/htdocs/secretlab.sg/vendor/phpunit/phpunit/src/Framework/TestCase.php
+	Line: 1471
+	Function: testGetDB
+
+	File: /Applications/MAMP/htdocs/secretlab.sg/vendor/phpunit/phpunit/src/Framework/TestCase.php
+	Line: 1091
+	Function: runTest
+
+	File: /Applications/MAMP/htdocs/secretlab.sg/vendor/phpunit/phpunit/src/Framework/TestResult.php
+	Line: 703
+	Function: runBare
+
+	File: /Applications/MAMP/htdocs/secretlab.sg/vendor/phpunit/phpunit/src/Framework/TestCase.php
+	Line: 819
+	Function: run
+
+	File: /Applications/MAMP/htdocs/secretlab.sg/vendor/phpunit/phpunit/src/Framework/TestSuite.php
+	Line: 627
+	Function: run
+
+	File: /Applications/MAMP/htdocs/secretlab.sg/vendor/phpunit/phpunit/src/TextUI/TestRunner.php
+	Line: 656
+	Function: run
+
+	File: /Applications/MAMP/htdocs/secretlab.sg/vendor/phpunit/phpunit/src/TextUI/Command.php
+	Line: 236
+	Function: doRun
+
+	File: /Applications/MAMP/htdocs/secretlab.sg/vendor/phpunit/phpunit/src/TextUI/Command.php
+	Line: 195
+	Function: run
+
+	File: /Applications/MAMP/htdocs/secretlab.sg/vendor/phpunit/phpunit/phpunit
+	Line: 61
+	Function: main
+
+
+</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
