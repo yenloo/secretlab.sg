@@ -26,7 +26,7 @@ jobs:
         run: php
 
       - name: PHPUnit Tests
-        uses: php-actions/phpunit@v8
+        uses: php-actions/phpunit@v9
         with:
           php_version: 7.2
           bootstrap: vendor/autoload.php
