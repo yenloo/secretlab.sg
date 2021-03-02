@@ -4,7 +4,7 @@ jobs:
   phpunit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       # For YAML Actions, use v1 or later
       #- uses: pxgamer/phpunit-action@master
         #with:
@@ -18,6 +18,9 @@ jobs:
         with:
           php-version: '7.2'
           extensions: imagick, swoole
+      
+      - name: Check PHP version
+        run: php -v
 
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v8
