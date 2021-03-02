@@ -16,11 +16,11 @@ jobs:
       - name: Setup PHP with PECL extension
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '7.4'
+          php-version: '7.2'
           extensions: imagick, swoole
 
       - name: PHPUnit Tests
-        uses: php-actions/phpunit@v9
+        uses: php-actions/phpunit@v8
         with:
           bootstrap: vendor/autoload.php
           configuration: application/tests/phpunit.xml
