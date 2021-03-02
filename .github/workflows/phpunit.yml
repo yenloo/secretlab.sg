@@ -9,6 +9,4 @@ jobs:
       - uses: pxgamer/phpunit-action@master
         with:
           # If there isn't a PHPUnit config, specify files or directories to test
-          command: |
-                  cd /application/tests
-                  ../../vendor/bin/phpunit --no-coverage --verbose SecretlabTest
+          command: tests/
