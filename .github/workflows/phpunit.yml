@@ -20,7 +20,7 @@ jobs:
           extensions: imagick, swoole
 
       - name: PHPUnit Tests
-        uses: php-actions/phpunit@v8
+        uses: php-actions/phpunit@v9
         with:
           bootstrap: vendor/autoload.php
           configuration: application/tests/phpunit.xml
