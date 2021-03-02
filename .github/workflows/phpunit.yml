@@ -25,9 +25,7 @@ jobs:
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: ${{ matrix.php-versions }}
-          extensions: intl #optional
-          ini-values: "post_max_size=256M" #optional
+          php-version: 7.2
       - name: Check PHP Version
         run: php
       # —— Composer 🧙‍️ —————————————————————————————————————————————————————————
