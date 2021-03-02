@@ -39,7 +39,7 @@ jobs:
         run: php --version
 
       - name: PHPUnit Tests
-        run: vendor/bin/phpunit --no-coverage --verbose SecretlabTest
+        run: vendor/bin/phpunit --verbose application/tests/SecretlabTest
         #uses: php-actions/phpunit@v8
         #with:
         #  php_version: 7.2
