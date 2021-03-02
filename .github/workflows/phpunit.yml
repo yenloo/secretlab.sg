@@ -23,7 +23,7 @@ jobs:
       #  run: php -v
 
       - name: PHPUnit Tests
-        uses: php-actions/phpunit@v2
+        uses: php-actions/phpunit@v8
         with:
           bootstrap: vendor/autoload.php
           configuration: application/tests/phpunit.xml
