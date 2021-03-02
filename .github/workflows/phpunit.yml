@@ -13,17 +13,17 @@ jobs:
       
       #- uses: php-actions/composer@v5
       
-      - name: Setup PHP with PECL extension
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '7.2'
-          extensions: imagick, swoole
+      #- name: Setup PHP with PECL extension
+      #  uses: shivammathur/setup-php@v2
+      #  with:
+      #    php-version: '7.2'
+      #    extensions: imagick, swoole
       
-      - name: Check PHP version
-        run: php -v
+      #- name: Check PHP version
+      #  run: php -v
 
       - name: PHPUnit Tests
-        uses: php-actions/phpunit@v8
+        uses: php-actions/phpunit@v2
         with:
           bootstrap: vendor/autoload.php
           configuration: application/tests/phpunit.xml
