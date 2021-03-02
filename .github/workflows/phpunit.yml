@@ -5,6 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with: 
+          php_version: 7.2
+        
       # For YAML Actions, use v1 or later
       #- uses: pxgamer/phpunit-action@master
         #with:
@@ -21,6 +24,8 @@ jobs:
       
       #- name: Check PHP version
       #  run: php -v
+      - name: Check PHP Version
+        run: php
 
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v8
