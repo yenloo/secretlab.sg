@@ -19,5 +19,6 @@ jobs:
           php-version: '7.3'
           bootstrap: vendor/autoload.php
           configuration: application/tests/phpunit.xml
-          args: --coverage-text
+          #args: --coverage-text
+          coverage: xdebug
 
